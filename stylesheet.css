@@ -81,24 +81,24 @@ body {
 
 /* Menu languages */
 #langtextEN{
-	display: none;
+	display: inline-block;
 	color: lightblue;
 	margin: 0 0 0 18px;
 }
 
 #langtextPT{
-	display: inline-block;
+	display: none;
 	color: lightblue;
 	margin: 0 0 0 18px;
 }
 
 
 #ENmenu {
-	display: none;
+	display: block;
 }
 
 #PTmenu {
-	display: block;
+	display: none;
 }
 
 
@@ -130,11 +130,11 @@ body {
 
 /*Left text languages*/
 #lefttextEN {
-display: none;
+display: block;
 }
 
 #lefttextPT {
-display: block;
+display: none;
 }
 
 .leftside .cv {
@@ -161,19 +161,19 @@ display: block;
 
 /* cv and profile language */
 #cvEN {
-	display: none;
+	display: block;
 }
 
 #cvPT {
-	display: block;
-}
-
-#profileEN{
 	display: none;
 }
 
-#profilePT{
+#profileEN{
 	display: block;
+}
+
+#profilePT{
+	display: none;
 }
 
 /* Right bar*/
@@ -218,7 +218,7 @@ display: block;
 
 /* initial values: will be changes by the function pageshifter */
 .center .text #aboutPT {
-	display: block;
+	display: none;
 }
 .center .text #portPT {
 	display: none;
@@ -231,7 +231,7 @@ display: block;
 }
 
 .center .text #aboutEN {
-	display: none;
+	display: block;
 }
 .center .text #portEN {
 	display: none;
@@ -256,9 +256,9 @@ footer {
 
 /* Footnote language */
 #footnoteEN{
-	display: none;
+	display: block;
 }
 
 #footnotePT{
-	display: block;
+	display: none;
 }
