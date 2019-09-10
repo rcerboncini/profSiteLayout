@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Add title here</title>
+	<meta http-equiv=”Content-Type” content=”text/html; charset=iso-8859-1″><!--this is for Portuguese/if using English only change charset to UTF-8-->
+	<link rel="stylesheet" href="stylesheet.css">
+	<script type="text/javascript" src="jscript.js"></script>
+</head>
+
+<body>
+	<section class="topimg">
+		<img src="img/Top.png">
+	</section>
+
+	<nav class="menu">
+		<div class="menuleft"><!--left side of menu contains the language selector, add languages if necessary and don't forget to edit the js file-->
+			<span id="langtextEN">Language:</span>
+			<span id="langtextPT">Idioma:</span>
+			<select class="langsel" id="langswitch" data-placeholder="Choose a Language" onchange="langchange(); adjheight();">
+				<option class="langitem" value="EN">English</option>
+				<option class="langitem" value="PT">Português</option>
+			</select>
+		</div>
+		<ul id="ENmenu"><!--every language needs a menu like this, change the object id's for the pageshifter function and edit js file-->
+			<a href="#about" onclick=" pageshifter('aboutEN','portEN','codeEN','contEN'); adjheight();"><li>About me</li></a>
+			<a href="#portfolio" onclick=" pageshifter('portEN','codeEN','contEN','aboutEN'); adjheight();"><li>Portfolio</li></a>
+			<a href="#code" onclick=" pageshifter('codeEN','contEN','aboutEN','portEN'); adjheight();"><li>Programs</li></a>
+			<a href="#contact" onclick=" pageshifter('contEN','aboutEN','portEN','codeEN'); adjheight();"><li>Contact</li></a>
+		</ul>
+		<ul id="PTmenu">
+			<a href="#about" onclick=" pageshifter('aboutPT','portPT','codePT','contPT'); adjheight();"><li>Sobre mim</li></a>
+			<a href="#portfolio" onclick=" pageshifter('portPT','codePT','contPT','aboutPT'); adjheight();"><li>Portfolio</li></a>
+			<a href="#code" onclick=" pageshifter('codePT','contPT','aboutPT','portPT'); adjheight();"><li>Códigos</li></a>
+			<a href="#contact" onclick=" pageshifter('contPT','aboutPT','portPT','codePT'); adjheight();"><li>Contato</li></a>
+		</ul>
+	</nav>
+
+	<section class="leftside" id="left">
+		<div class="photo">
+			<img src="img/photo.png" alt="MyPhoto"><!--change to your photo here-->
+		</div>
+		<div class="lefttext" id="lefttextEN">
+			<H1>Add your name here</H1>
+			<p>Add title, education here
+		</div>
+			<div class="lefttext" id="lefttextPT">
+			<H1>Adicione aqui o seu nome</H1>
+			<p>Adicione aqui seu título e formação
+		</div>
+		<div class="cv" id="cvEN">
+			<p>My cv:<br>
+			<a target="_blank" href=""><img src="img/mycv.png"></a></p><!--update image and link to your online cv if you have one; edit as necessary-->
+		</div>
+		<div class="cv" id="cvPT">
+			<p>Meu currículo:<br>
+			<a target="_blank" href=""><img src="img/mycv.png"></a></p><!--atualize a imagem e link para o seu curriculo online, caso tenha um; edite conforme o necessário-->
+		</div>
+		<div class="profile" id="profileEN">
+			<p>My profile:<br>
+			<a target="_blank" href=""><img src="img/myprofile.png"></a></p><!--update image and link to your profile (eg. GitHub) if you have one; edit as necessary-->
+		</div>
+		<div class="profile" id="profilePT">
+			<p>Meu perfil:<br>
+			<a target="_blank" href=""><img src="img/myprofile.png"></a></p><!--atualize a imagem e link para o seu perfil (eg. GitHub), caso tenha um; edite conforme o necessário-->
+		</div>
+	</section>
+
+	<section class="rightside" id="right">
+		<!-- Use a vertical bar in the right portion of your site if you want: remove 'display: none;' from css	and decrease 'width' of the middle section -->
+	</section>
+
+	<section class="center" id="middle">
+		<div class="text">
+
+			<!-- English -->
+			<span id="aboutEN">
+				<br>
+				<H1>Welcome!</H1>
+				<p>Add text about yourself here.</p>
+				<br>
+				<br>
+			</span>
+			<span id="portEN">
+				<br>
+				<H1>Portfolio</H1>
+				<p>Add examples of your work here.</p>
+				<br>
+				<br>
+			</span>
+			<span id="codeEN">
+				<br>
+				<H1>Code</H1>
+				<p>List your programs and codes here.</p>
+				<br>
+				<br>
+			</span>
+			<span id="contEN">
+				<br>
+				<H1>Contact</H1>
+				<a href="mailto:youremail@example.com?subject=I visited your site and decided to contact you!">email@example.com</a><!--Edit your contact information as you wish-->
+				<br>
+				<br>
+			</span>
+
+			<!-- Portuguese -->
+			<span id="aboutPT">
+				<br>
+				<H1>Bem vindo!</H1>
+				<p>Adicione texto sobre você aqui.</p>
+				<br>
+				<br>
+			</span>
+			<span id="portPT">
+				<br>
+				<H1>Portfolio</H1>
+				<p>Adicione exemplos do seu trabalho aqui.</p>
+				<br>
+				<br>
+			</span>
+			<span id="codePT">
+				<br>
+				<H1>Códigos</H1>
+				<p>Liste seus programas e códigos aqui.</p>
+				<br>
+				<br>
+			</span>
+			<span id="contPT">
+				<br>
+				<H1>Contato:</H1>
+				<a href="mailto:email@exemplo.com.br?subject=Visitei o seu site e resolvi te contatar!">email@exemplo.com.br</a>
+				<br>
+				<br>
+			</span>
+			
+		</div>	
+	</section>
+	<script>adjheight();</script>
+</body>
+<footer>
+ 	<span id="footnoteEN">add text here</span>
+ 	<span id="footnotePT">adicione texto aqui</span>
+</footer>
+
+</html>

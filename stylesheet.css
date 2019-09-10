@@ -1,0 +1,264 @@
+
+body {
+  background-color: black;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* for the adjheight function */
+#left {
+	height = ;
+}
+
+#middle {
+	height = ;
+}
+
+#right {
+	height = ;
+}
+
+/* Top image */
+.topimg img{
+	width: 100%;
+	max-height: 120px;
+}
+
+/* Menu */
+.menu {
+	background-image: none;
+	background-size: cover;
+	background: grey;
+	width: 100%;
+	height: 44px;
+	position: relative;
+	margin: -15px 0 5px 0;
+
+	}
+
+/*Left side of menu*/
+.menu .menuleft { 
+	width: 25%;
+	float: left;
+	height: 44px;
+
+}
+/* Language selection box */
+.menu .menuleft .langsel { 
+	height: 25px;
+	width: 30%;
+	margin: 9px 0 9px 0px;
+	font-size: 12px;
+	font-family: Verdana, sans-serif;
+}
+
+.menu ul{ /* Menu  list*/
+	list-style-type: none;
+	text-align: center;
+}
+
+.menu ul li {
+	color: white;
+	text-decoration: none;
+	font-family: Verdana, sans-serif;
+	line-height: 44px;
+	font-size: 20px;
+	padding: 0 5% 0  5%;
+	display: inline-block;	
+}
+
+.menu ul li:hover {
+	line-height: 44px;
+	background: #333;
+}
+
+.menu ul a {
+	color: white;
+	text-decoration: none;
+	font-family: Verdana, sans-serif;
+	font-size: 20px;
+}
+
+/* Menu languages */
+#langtextEN{
+	display: none;
+	color: lightblue;
+	margin: 0 0 0 18px;
+}
+
+#langtextPT{
+	display: inline-block;
+	color: lightblue;
+	margin: 0 0 0 18px;
+}
+
+
+#ENmenu {
+	display: none;
+}
+
+#PTmenu {
+	display: block;
+}
+
+
+/* Main content */
+.leftside { /* Left side */
+	float: left;
+	min-height: 660px;
+	width: 25%;
+	background: gold;
+	margin: 0 0.5% 0 0;
+}
+
+
+.leftside .photo img {
+	width: 80%;
+	display: block;
+	margin: 25px auto 10px auto;
+}
+
+.lefttext	h1 {
+	margin: ;
+	font-size: 18px;
+}
+.lefttext	{
+	text-align: center;
+	font-size: 14px;
+	color: black;
+}
+
+/*Left text languages*/
+#lefttextEN {
+display: none;
+}
+
+#lefttextPT {
+display: block;
+}
+
+.leftside .cv {
+	text-align: center;
+	color: brown;
+	font-size: 14px;
+	margin: 33px 0 0 0;
+}
+
+.leftside .cv img {
+	width: 50%;
+}
+
+.leftside .profile{
+	text-align: center;
+	color: brown;
+	font-size: 14px;
+	margin: 27px 0 0 0;
+}
+
+.leftside .profile img {
+	width: 50%;
+}
+
+/* cv and profile language */
+#cvEN {
+	display: none;
+}
+
+#cvPT {
+	display: block;
+}
+
+#profileEN{
+	display: none;
+}
+
+#profilePT{
+	display: block;
+}
+
+/* Right bar*/
+.rightside { 
+	min-height: 620px;
+	background: #333;
+	float: right;
+	width: 25%;
+	color: white;
+	display: none;/*remove to turn right bar on*/
+}
+
+/* Middle content */
+.center	{ 
+	display: inline-block;
+	background: white;
+	width: 74.5%;
+	min-height: 660px;
+	margin: 0 auto 0 auto;
+}
+
+.center .text {
+	color: black;
+	text-align: center;
+	margin: 0 60px 0 60px;
+}
+
+.center .text h1 {
+	font-size: 27pt;
+}
+
+.center .text p {
+	color: black;
+	text-align: justify;
+	font-size: 16pt;
+	margin: 0 60px 0 60px;
+}
+.center .text a {
+	font-size: 20pt;
+	text-decoration: none;
+}
+
+/* initial values: will be changes by the function pageshifter */
+.center .text #aboutPT {
+	display: block;
+}
+.center .text #portPT {
+	display: none;
+}
+.center .text #codePT {
+	display: none;
+}
+.center .text #contPT {
+	display: none;
+}
+
+.center .text #aboutEN {
+	display: none;
+}
+.center .text #portEN {
+	display: none;
+}
+.center .text #codeEN {
+	display: none;
+}
+.center .text #contEN {
+	display: none;
+}
+
+/* Footer */
+footer {
+	line-height: 100px;
+	color: silver;
+	text-align: center;
+	background: brown;
+	height: 100px;
+	/*border-top: 2px solid lightblue;*/
+	margin: 0.5% 0 0 0;
+}
+
+/* Footnote language */
+#footnoteEN{
+	display: none;
+}
+
+#footnotePT{
+	display: block;
+}
